@@ -22,8 +22,11 @@
 
 <body>
     <h1> Fetch API</h1>
+    <div id="posts" class="posts-grid"></div>
+
         
         <script>
+            // pictures taken from -> https://picsum.photos/images
             // json editor -> https://jsoneditoronline.org/#
             //fetch('https://api.npoint.io/07be7bd5624d953de6c4') // online database for holding json files
             fetch('res/myjson.json') // local json file
@@ -42,7 +45,7 @@
                         postDiv.appendChild(postTitle);
                         postDiv.appendChild(postBody);
                         postDiv.appendChild(postImage);
-                        document.body.appendChild(postDiv);
+                        document.getElementById('posts').appendChild(postDiv);
                         }
                     })
                 .catch(err => { // catch any errors with this block
