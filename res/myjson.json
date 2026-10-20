@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "age": 34,
+    "sex": "Male",
+    "city": "Chicago",
+    "photo": "https://picsum.photos/id/11/400/300",
+    "country": "United States",
+    "last_name": "Johnson",
+    "first_name": "Liam"
+  },
+  {
+    "id": 2,
+    "age": 28,
+    "sex": "Female",
+    "city": "Berlin",
+    "photo": "https://picsum.photos/id/12/400/300",
+    "country": "Germany",
+    "last_name": "Müller",
+    "first_name": "Emma"
+  },
+  {
+    "id": 3,
+    "age": 41,
+    "sex": "Male",
+    "city": "Lyon",
+    "photo": "https://picsum.photos/id/13/400/300",
+    "country": "France",
+    "last_name": "Dubois",
+    "first_name": "Noah"
+  },
+  {
+    "id": 4,
+    "age": 25,
+    "sex": "Female",
+    "city": "Milan",
+    "photo": "https://picsum.photos/id/14/400/300",
+    "country": "Italy",
+    "last_name": "Rossi",
+    "first_name": "Olivia"
+  },
+  {
+    "id": 5,
+    "age": 31,
+    "sex": "Male",
+    "city": "Tartu",
+    "photo": "https://picsum.photos/id/15/400/300",
+    "country": "Estonia",
+    "last_name": "Tamm",
+    "first_name": "Mati"
+  },
+  {
+    "id": 6,
+    "age": 37,
+    "sex": "Female",
+    "city": "Valencia",
+    "photo": "https://picsum.photos/id/16/400/300",
+    "country": "Spain",
+    "last_name": "García",
+    "first_name": "Sofia"
+  },
+  {
+    "id": 7,
+    "age": 29,
+    "sex": "Male",
+    "city": "São Paulo",
+    "photo": "https://picsum.photos/id/17/400/300",
+    "country": "Brazil",
+    "last_name": "Silva",
+    "first_name": "Lucas"
+  },
+  {
+    "id": 8,
+    "age": 45,
+    "sex": "Female",
+    "city": "Helsinki",
+    "photo": "https://picsum.photos/id/18/400/300",
+    "country": "Finland",
+    "last_name": "Virtanen",
+    "first_name": "Aino"
+  }
+]

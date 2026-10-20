@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WAD Homework 2</title>
+    <style>
+      a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+        <a href="index.html"><strong>Home</strong></a>
+        <a class="logo" href="#"><img src="img/download.png" width="80" height="80" alt="My picture"></a>
+    </header>
+
+<body>
+    <h1> Fetch API</h1>
+        
+        <script>
+            // json editor -> https://jsoneditoronline.org/#
+            //fetch('https://api.npoint.io/07be7bd5624d953de6c4') // online database for holding json files
+            fetch('res/myjson.json') // local json file
+                .then(response => response.json())
+                .then(json => {
+                    console.log(json);
+                    for(singleJsonPost of json){
+                        let postDiv = document.createElement('div');
+                        postDiv.className = "post";
+                        let postTitle = document.createElement('h3');
+                        postTitle.innerText = singleJsonPost.city + " - " + singleJsonPost.country;
+                        let postBody = document.createElement('p');
+                        postBody.innerText = singleJsonPost.first_name + " " + singleJsonPost.last_name + ", Age: " + singleJsonPost.age + ", Sex: " + singleJsonPost.sex;
+                        let postImage = document.createElement('img');
+                        postImage.src = singleJsonPost.photo;
+                        postDiv.appendChild(postTitle);
+                        postDiv.appendChild(postBody);
+                        postDiv.appendChild(postImage);
+                        document.body.appendChild(postDiv);
+                        }
+                    })
+                .catch(err => { // catch any errors with this block
+                        let errDiv = document.createElement("div");
+                        errDiv.className = 'post';
+                        errDiv.innerText = err;
+                        document.body.appendChild(errDiv)
+                        })
+                .finally(() => { // finally block will always run, regardless of success or failure -> in this case we added date + time
+                        let footer = document.createElement("footer");
+                        date = new Date().toLocaleString()
+                        footer.innerText = date;
+                        document.body.appendChild(footer);
+                        })                
+        </script>
+        </body>
+</html>
