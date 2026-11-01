@@ -1,82 +1,122 @@
 [
   {
     "id": 1,
+    "first_name": "Liam",
+    "last_name": "Johnson",
     "age": 34,
     "sex": "Male",
     "city": "Chicago",
-    "photo": "https://picsum.photos/id/11/400/300",
     "country": "United States",
-    "last_name": "Johnson",
-    "first_name": "Liam"
+    "created": "2026-10-02 14:35",
+    "text": "Walked the lakefront before work. The wind off the water is already winter wind.",
+    "photo": "https://picsum.photos/id/11/400/300"
   },
   {
     "id": 2,
+    "first_name": "Emma",
+    "last_name": "Müller",
     "age": 28,
     "sex": "Female",
     "city": "Berlin",
-    "photo": "https://picsum.photos/id/12/400/300",
     "country": "Germany",
-    "last_name": "Müller",
-    "first_name": "Emma"
+    "created": "2026-10-05 09:12",
+    "text": "Found a bookshop in Kreuzberg that only sells books about other books.",
+    "photo": "https://picsum.photos/id/12/400/300"
   },
   {
     "id": 3,
+    "first_name": "Noah",
+    "last_name": "Dubois",
     "age": 41,
     "sex": "Male",
     "city": "Lyon",
-    "photo": "https://picsum.photos/id/13/400/300",
     "country": "France",
-    "last_name": "Dubois",
-    "first_name": "Noah"
+    "created": "2026-10-08 18:44",
+    "text": "Three hours on a train with no signal. Best thinking I have done all month.",
+    "photo": "https://picsum.photos/id/13/400/300"
   },
   {
     "id": 4,
+    "first_name": "Olivia",
+    "last_name": "Rossi",
     "age": 25,
     "sex": "Female",
     "city": "Milan",
-    "photo": "https://picsum.photos/id/14/400/300",
     "country": "Italy",
-    "last_name": "Rossi",
-    "first_name": "Olivia"
+    "created": "2026-10-11 11:20",
+    "text": "Started a pottery course. Everything I make leans slightly to the left.",
+    "photo": "https://picsum.photos/id/14/400/300"
   },
   {
     "id": 5,
+    "first_name": "Mati",
+    "last_name": "Tamm",
     "age": 31,
     "sex": "Male",
     "city": "Tartu",
-    "photo": "https://picsum.photos/id/15/400/300",
     "country": "Estonia",
-    "last_name": "Tamm",
-    "first_name": "Mati"
+    "created": "2026-10-14 07:55",
+    "text": "First frost on the Emajogi this morning. Walked across town and saw nobody.",
+    "photo": "https://picsum.photos/id/15/400/300"
   },
   {
     "id": 6,
+    "first_name": "Sofia",
+    "last_name": "Garcia",
     "age": 37,
     "sex": "Female",
     "city": "Valencia",
-    "photo": "https://picsum.photos/id/16/400/300",
     "country": "Spain",
-    "last_name": "García",
-    "first_name": "Sofia"
+    "created": "2026-10-17 20:03",
+    "text": "The neighbours have started rehearsing for something. Nobody will tell me what.",
+    "photo": "https://picsum.photos/id/16/400/300"
   },
   {
     "id": 7,
+    "first_name": "Lucas",
+    "last_name": "Silva",
     "age": 29,
     "sex": "Male",
-    "city": "São Paulo",
-    "photo": "https://picsum.photos/id/17/400/300",
+    "city": "Sao Paulo",
     "country": "Brazil",
-    "last_name": "Silva",
-    "first_name": "Lucas"
+    "created": "2026-10-20 15:38",
+    "text": "Rewrote the same forty lines four times today. The fourth one finally reads like a sentence.",
+    "photo": "https://picsum.photos/id/17/400/300"
   },
   {
     "id": 8,
+    "first_name": "Aino",
+    "last_name": "Virtanen",
     "age": 45,
     "sex": "Female",
     "city": "Helsinki",
-    "photo": "https://picsum.photos/id/18/400/300",
     "country": "Finland",
-    "last_name": "Virtanen",
-    "first_name": "Aino"
+    "created": "2026-10-23 06:47",
+    "text": "Swam outdoors. Four degrees. Would recommend exactly once.",
+    "photo": "https://picsum.photos/id/18/400/300"
+  },
+  {
+    "id": 9,
+    "first_name": "Jonas",
+    "last_name": "Kaspar",
+    "age": 33,
+    "sex": "Male",
+    "city": "Riga",
+    "country": "Latvia",
+    "created": "2026-10-26 13:15",
+    "text": "Spent the afternoon fixing a fence that did not need fixing. Satisfying anyway.",
+    "photo": "https://picsum.photos/id/19/400/300"
+  },
+  {
+    "id": 10,
+    "first_name": "Kadri",
+    "last_name": "Saar",
+    "age": 27,
+    "sex": "Female",
+    "city": "Parnu",
+    "country": "Estonia",
+    "created": "2026-10-29 17:02",
+    "text": "The beach is completely empty in October and that is the entire point of it.",
+    "photo": "https://picsum.photos/id/20/400/300"
   }
 ]

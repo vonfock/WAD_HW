@@ -218,7 +218,7 @@ a:link {
     padding: 6px 0;
 }
 
-.dropdown:focus-within .dropdown-menu {
+.dropdown-menu.open {           /* both classes on the same element */
     display: block;
 }
 
@@ -284,4 +284,10 @@ footer {                         /* Date + time added by the fetch .finally() */
     text-align: center;
     color: #666;
     font-size: 0.9em;
+}
+
+.post-date {                     /* creation time line inside a post card */
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
 }

@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">  <!-- Link to the CSS file -->
-    <title>WAD Homework 1</title>             <!-- Title of the webpage in browser tab -->
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <span>|</span>
-        <a href="addPost.html">addPost</a>
-        <span>|</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+  <title>WAD Homework 1</title> <!-- Title of the webpage in browser tab -->
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="addPost.html">addPost</a>
+      <span>|</span>
       <a href="json.html">JSON posts</a>
     </nav>
 
-      <div class="dropdown" tabindex="0">
-        <img src="img/download.png" alt="My picture" class="dropdown-logo">
-        <ul class="dropdown-menu">
-          <li>John Doe</li>
-          <li>john.doe@ut.ee</li>
-          <li><a href="login.html">logout</a></li>
-        </ul>
-      </div>
-    </header>
+    <div class="dropdown" tabindex="0">
+      <img src="img/download.png" alt="My picture" class="dropdown-logo">
+      <ul class="dropdown-menu">
+        <li>John Doe</li>
+        <li>john.doe@ut.ee</li>
+        <li><a href="login.html">logout</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <div class="main-content">                                <!-- Main content area that contains the sidebar and the main content -->
-      <aside class="sidebar"></aside>                         <!-- Sidebar area for additional content or navigation must use FLEX! -->
-      <main class="content">
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My very-very first post</h4>
-          <p id="datetimeauto"></p>
-          <p class = "text"> I am a simple webpage created for WAD Homework 1.</p>
-          <script>                                <!-- JavaScript code to update the date and time every second - reuse from Practical 4 -->
+  <div class="main-content"> <!-- Main content area that contains the sidebar and the main content -->
+    <aside class="sidebar"></aside> <!-- Sidebar area for additional content or navigation must use FLEX! -->
+    <main class="content">
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My very-very first post</h4>
+        <p id="datetimeauto"></p>
+        <p class="text"> I am a simple webpage created for WAD Homework 1.</p>
+        <script>                                <!-- JavaScript code to update the date and time every second - reuse from Practical 4 -->
           function updateTime() {
-          const now = new Date();
-          document.getElementById("datetimeauto").textContent = now.toLocaleString();
+            const now = new Date();
+            document.getElementById("datetimeauto").textContent = now.toLocaleString();
           }
           updateTime();
           setInterval(updateTime, 1000);
-          </script>
-        </article>
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My first post</h4>
-          <p class = "datetime">05.05.2026</p>
-          <p class = "text">This webpage demonstrates basic HTML and CSS structure.</p>
-          <img src="img/unitartucs_cover.jfif" width="128" height="128" alt="cover photo">
-        </article>
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My second post</h4>
-          <p class = "date">08.08.2024</p>
-          <p class = "text">This has a very simple design.</p>
-        </article>
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My third post</h4>
-          <p class = "date">11.11.2024</p>
-          <p class = "text">We do not have very much idea about this.</p>
-          <img src="img/ati_logo.png" width="128" height="128" alt="some logo">
-        </article>
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My fourth post</h4>
-          <p class = "date">12.12.1994</p>
-          <p class = "text">but we gave our best.</p>
-        </article>
-        <article class="article">
-          <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
-          <h4>My fifth post</h4>
-          <p class = "date">12.12.1994</p>
-          <p class = "text">but we gave our best.</p>
-        </article>
-      </main>
+        </script>
+      </article>
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My first post</h4>
+        <p class="datetime">05.05.2026</p>
+        <p class="text">This webpage demonstrates basic HTML and CSS structure.</p>
+        <img src="img/unitartucs_cover.jfif" width="128" height="128" alt="cover photo">
+      </article>
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My second post</h4>
+        <p class="date">08.08.2024</p>
+        <p class="text">This has a very simple design.</p>
+      </article>
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My third post</h4>
+        <p class="date">11.11.2024</p>
+        <p class="text">We do not have very much idea about this.</p>
+        <img src="img/ati_logo.png" width="128" height="128" alt="some logo">
+      </article>
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My fourth post</h4>
+        <p class="date">12.12.1994</p>
+        <p class="text">but we gave our best.</p>
+      </article>
+      <article class="article">
+        <img src="img/download.png" width="10" height="10" alt="user-logo" class="user-logo">
+        <h4>My fifth post</h4>
+        <p class="date">12.12.1994</p>
+        <p class="text">but we gave our best.</p>
+      </article>
+    </main>
     <aside class="sidebar"></aside>
-    </div>
-  
-<footer class="footer">
-        <h1>Footer</h1>
-</footer>
+  </div>
+
+  <footer class="footer">
+    <h1>Footer</h1>
+  </footer>
+
+  <script>
+    // Find the profile photo in the header
+    const logo = document.querySelector('.dropdown-logo');
+
+    // When that photo is clicked, run the line you ran in the console
+    logo.addEventListener('click', () => {
+      document.querySelector('.dropdown-menu').classList.toggle('open');
+    });
+  </script>
 </body>
+
 </html>
