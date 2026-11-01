@@ -179,7 +179,50 @@ a:link {
         text-decoration: none;
       }
 
-//Json posts styling
+/* Header dropdown */
+.header {
+    z-index: 100;               /* keeps the menu above the page content (the header is sticky) */
+}
+
+.dropdown {
+    position: relative;
+    margin-left: auto;          /* pushes the avatar to the right edge */
+    outline: none;
+}
+
+.dropdown-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;              /* hidden until the avatar is clicked */
+    position: absolute;         /* floats over the page, the header never changes size */
+    top: 100%;
+    right: 0;
+    width: 220px;
+    margin: 8px 0 0;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: grey;
+    border-radius: 5px;
+    font-size: 0.5em;           /* the header is 2em, so scale back down */
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 6px 0;
+}
+
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Json posts styling */
 
 .post {                          /* Single post card */
     display: grid;

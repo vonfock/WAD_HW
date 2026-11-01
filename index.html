@@ -9,12 +9,22 @@
 
   <body>
     <header class="header">
-        <a href="index.html"><strong>Home</strong></a>        <!-- Link to the home page -->
-        <strong> | </strong>
-        <a href="addPost.html"><strong>addPost</strong></a>   <!-- Link to the add post page -->
-        <strong> | </strong>
-        <a href="json.html"><strong>JSON posts</strong></a>        <!-- Link to the JSON posts page -->
-        <a class="logo" href="login.html"><img src="img/download.png" width="80" height="80" alt="My picture"></a>   <!-- Logo link -->
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="addPost.html">addPost</a>
+        <span>|</span>
+      <a href="json.html">JSON posts</a>
+    </nav>
+
+      <div class="dropdown" tabindex="0">
+        <img src="img/download.png" alt="My picture" class="dropdown-logo">
+        <ul class="dropdown-menu">
+          <li>John Doe</li>
+          <li>john.doe@ut.ee</li>
+          <li><a href="login.html">logout</a></li>
+        </ul>
+      </div>
     </header>
 
     <div class="main-content">                                <!-- Main content area that contains the sidebar and the main content -->
