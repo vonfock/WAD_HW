@@ -1,15 +1,17 @@
 <template>
   <div class="home">
-    <div v-for="post in posts" :key="post.id">
-      <h3>{{ post.city }} - {{ post.country }}</h3>
-      <p>{{ post.text }}</p>
-    </div>
+    <PostCard v-for="post in posts" :key="post.id" :id="post.id" />
   </div>
 </template>
 
 <script>
+import PostCard from '@/components/PostCard.vue'
+
 export default {
   name: 'HomeView',
+  components: {
+    PostCard
+  },
   computed: {
     posts() {
       return this.$store.state.posts
