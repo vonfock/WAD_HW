@@ -5,6 +5,10 @@
     <p class="post-date">{{ post.created }}</p>
     <p>{{ post.text }}</p>
     <img :src="post.photo" alt="post photo">
+    <button type="button" @click="likePost">
+      Like
+    </button>
+    <span>{{ post.likes }} likes</span>
   </div>
 </template>
 
@@ -13,6 +17,11 @@ export default {
   name: 'PostCard',
   props: {
     id: Number
+  },
+  methods: {
+    likePost() {
+      this.$store.commit('increaseLike', this.id)
+    }
   },
   computed: {
     post() {
@@ -30,6 +39,12 @@ export default {
   padding: 15px 20px;
   margin: 20px auto;
   max-width: 500px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .post img {
