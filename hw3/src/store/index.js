@@ -27,3 +27,5 @@ export default createStore({
   actions: {},
   modules: {}
 })
+
+// Add the actions inside the store to commit the mutations. The actions will be called from the components and will commit the mutations to update the state.
