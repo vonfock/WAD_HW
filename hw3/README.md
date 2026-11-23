@@ -10,7 +10,7 @@ npm install
 npm run serve
 ```
 
-Open ned terminal, navigate to hw3 directory and continue
+Open new terminal, navigate to hw3 directory and continue
 
 ### Compiles and minifies for production
 ```
