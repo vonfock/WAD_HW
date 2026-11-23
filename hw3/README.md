@@ -10,6 +10,8 @@ npm install
 npm run serve
 ```
 
+Open ned terminal, navigate to hw3 directory and continue
+
 ### Compiles and minifies for production
 ```
 npm run build
@@ -22,3 +24,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+If all set and no errors found, open project at localhost:8080

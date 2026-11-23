@@ -38,7 +38,7 @@ export default {
   border-radius: 8px;
   padding: 15px 20px;
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 button {

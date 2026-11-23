@@ -1,14 +1,20 @@
 <template>
   <main class="signup">
-    <form class="signup-form" @submit.prevent="validatePassword">
+
+        <form class="signup-form" novalidate @submit.prevent="validateForm">
       <label for="email">Email</label>
       <input
         id="email"
         v-model="email"
         type="email"
         placeholder="Email"
+        @input="emailTouched = true"
         required
       >
+
+      <div v-if="emailTouched && emailError" class="validation-errors">
+        <p>{{ emailError }}</p>
+      </div>
 
       <label for="password">Password</label>
       <input
@@ -41,10 +47,18 @@ export default {
     return {
       email: '',
       password: '',
+      emailTouched: false,
       passwordTouched: false
     }
   },
   computed: {
+    emailError() {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailPattern.test(this.email)) {
+        return 'Please enter a valid email address'
+      }
+      return ''
+    },
     passwordErrors() {
       const errors = []
       const password = this.password
@@ -72,6 +86,10 @@ export default {
     }
   },
   methods: {
+    validateForm() {
+      this.emailTouched = true
+      this.passwordTouched = true
+    },
     validatePassword() {
       this.passwordTouched = true
     }
@@ -81,7 +99,7 @@ export default {
 
 <style scoped>
 .signup {
-  min-height: 320px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,19 +107,19 @@ export default {
 }
 
 .signup-form {
-  width: 260px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  border: 1px solid #c9c5c5;
+  border: 5px solid #c9c5c5;
   border-radius: 8px;
   background: #ffffff;
   text-align: left;
 }
 
 .signup-form label {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .signup-form input {
@@ -125,7 +143,7 @@ export default {
 
 .validation-errors {
   color: #b00020;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .validation-errors p {
